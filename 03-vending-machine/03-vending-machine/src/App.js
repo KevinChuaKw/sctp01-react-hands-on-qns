@@ -1,18 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 export default function App () {
+
+  const [displayMessage, setDisplayMessage] = useState(""); 
   
+
   return (
-      <React.Fragment>
+      <>
         <h1>Drink Vending Machine</h1>
         <div className="display">
+          {displayMessage}
         </div>
-        <button>Coffee</button>
-        <button>Tea</button>
-        <button>Orange Juice</button>
-      </React.Fragment>
+        <button onClick={}>Coffee</button>
+        <button onClick={}>Tea</button>
+        <button onClick={}>Orange Juice</button>
+      </>
     );
   
 }
-
-

@@ -2,7 +2,16 @@ import React, {useState} from 'react'
 
 function ColoredBox() {
 
-    const [color, setColor] = useState(1);
+    const [color, setColor] = useState();
+    const redButtonClick = () => {
+        setColor(1); 
+    }
+    const blueButtonClick = () => {
+        setColor(2); 
+    }
+    const greenButtonClick = () => {
+        setColor(3); 
+    }
 
     const getColor = () => {
         if (color === 1) {
@@ -24,10 +33,13 @@ function ColoredBox() {
             backgroundColor: getColor()
         }}>
         </div>
+        <div>
 
-        <button>Red</button>
-        <button>Green</button>
-        <button>Blue</button>
+        </div>
+
+        <button onClick={redButtonClick}>Red</button>
+        <button onClick={greenButtonClick}>Green</button>
+        <button onClick={blueButtonClick}>Blue</button>
     </React.Fragment>
   
 }
