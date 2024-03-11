@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 export default function App () {
 
   const [displayMessage, setDisplayMessage] = useState(""); 
-  
+
 
   return (
       <>
@@ -11,9 +11,15 @@ export default function App () {
         <div className="display">
           {displayMessage}
         </div>
-        <button onClick={}>Coffee</button>
-        <button onClick={}>Tea</button>
-        <button onClick={}>Orange Juice</button>
+        <button onClick={()=>{
+          setDisplayMessage("Dispensing coffee")
+        }}>Coffee</button>
+        <button onClick={()=>{
+          setDisplayMessage("Dispensing tea")
+        }}>Tea</button>
+        <button onClick={()=>{
+          setDisplayMessage("Dispensing orange juice")
+        }}>Orange Juice</button>
       </>
     );
   
