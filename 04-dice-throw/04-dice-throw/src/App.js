@@ -1,9 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-
-const [] = useState(""); 
-
-
+import Dice from './Dice';
 
 function App() {
   return (
